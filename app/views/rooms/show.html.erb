@@ -11,27 +11,16 @@
   var token = '<%= @tok_token %>'
 </script>
 
-<input type="button" onclick="initialize()" value="Start">
-
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b>Room Name:</b>
   <%= @room.name %>
 </p>
 
-<p>
-  <b>Sessionid:</b>
-  <%= @room.sessionId %>
-</p>
+<input type="button" onclick="initialize()" value="Connect">
 
-<p>
-  <b>Public:</b>
-  <%= @room.public %>
-</p>
-
-
-<%= link_to 'Edit', edit_room_path(@room) %> |
 <%= link_to 'Back', rooms_path %>
 
-<div id="myPublisherDiv"></div>
+<div id="publisherDiv"></div>
+

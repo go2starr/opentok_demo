@@ -11,7 +11,7 @@ function initialize() {
   function sessionConnectedHandler(event) {
     // Put my webcam in a div
     var publishProps = {height:240, width:320};
-    publisher = TB.initPublisher(apiKey, 'myPublisherDiv', publishProps);
+    publisher = TB.initPublisher(apiKey, 'publisherDiv', publishProps);
     
     // Send my stream to the session
     session.publish(publisher);

@@ -3,8 +3,6 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Sessionid</th>
-    <th>Public</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,11 +11,8 @@
 <% @rooms.each do |room| %>
   <tr>
     <td><%= room.name %></td>
-    <td><%= room.sessionId %></td>
-    <td><%= room.public %></td>
     <td><%= link_to 'Show', room %></td>
-    <td><%= link_to 'Edit', edit_room_path(room) %></td>
-    <td><%= link_to 'Destroy', room, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Delete', room, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
